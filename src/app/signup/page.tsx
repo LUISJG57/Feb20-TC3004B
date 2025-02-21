@@ -30,7 +30,7 @@ export default function SignUp() {
   };
 
   const validatePassword = (password: string): boolean => {
-    const re = /^(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.{8,})/;
+    const re = /^(?=.*[A-Z])(?=.*[!@?#$%^&*])(?=.{8,})/;
     return re.test(String(password));
   };
 
@@ -58,7 +58,7 @@ export default function SignUp() {
       // Guardar la información del usuario en memoria
       localStorage.setItem('user', JSON.stringify(user));
       // Redirigir a la página de inicio
-      router.push('/home');
+      router.push('/');
     }
   };
 

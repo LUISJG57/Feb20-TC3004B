@@ -15,7 +15,7 @@ if (!user) {
 }
 }, [router]);
 
-const [bgColor, setBgColor] = useState("black");
+const [bgColor, setBgColor] = useState("white");
   return (
     <main className="flex flex-col min-h-screen items-center justify-center ">
         <div className={`w-1/2 p-4 rounded-lg shadow-lg h-64 bg-${bgColor}`}> </div>
